@@ -9,22 +9,22 @@
 
 # Ideas
 
-- Maze
-> Top down horror game
-> Generated maze/dungeon
+> Maze
+- Top down horror game
+- Generated maze/dungeon
 
-- Enemy
-> Refered to as Murphy
-> Enemy moves randomly through the maze slowly
-> If the player moves into the room the enemy is in, the enemy attempts to charge the player
-> The charge can break some walls that the player can't
-> Enemy can hear certain sounds (footsteps, doors opening) when the player is near it
+> Enemy
+- Refered to as Murphy
+- Enemy moves randomly through the maze slowly
+- If the player moves into the room the enemy is in, the enemy attempts to charge the player
+- The charge can break some walls that the player can't
+- Enemy can hear certain sounds (footsteps, doors opening) when the player is near it
 
-- Player
-> Player moves with WASD
-> Player has to avoid the enemy
-> The player has to get to a sword in the centre of the maze
+> Player
+- Player moves with WASD
+- Player has to avoid the enemy
+- The player has to get to a sword in the centre of the maze
 
-- Doors 
-> Doors have a chance to make a creaking sound when opened which attracts the enemy
-> (?)Some doors could be fake
+> Doors 
+- Doors have a chance to make a creaking sound when opened which attracts the enemy
+- (?)Some doors could be fake
