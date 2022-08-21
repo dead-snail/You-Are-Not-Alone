@@ -1,0 +1,4 @@
+.vscode/
+build/game.exe
+include/raylib.h
+lib/
