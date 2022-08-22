@@ -1,1 +1,1 @@
-## put raylib.h file in this folder
+# put raylib.h file in this folder
