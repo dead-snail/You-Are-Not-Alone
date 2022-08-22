@@ -1,0 +1,8 @@
+# Enemies
+
+| Character | Power | Health | Attack | How to kill | Description | Notes            |
+| :-------: | :---: | :----: | :----: | :---------: | :---------: | :--------------: |
+| Minotaur  | - Can charge to do extra damage. | 3HP    | - 2 contact DMG <br />- 4 charged DMG   | Loses 1HP when it charges into a wall. | Half human, half bull, the minotaur barrels through walls with great speed. But with speed also comes clumsiness... | ~ |
+| Wizard | -Shoots ice bolts which slow the player. <br />- Can freeze the player temporarily. <br />- Has telekenesis to form a shield when in grave peril.| 5HP | - 3 contact DMG <br />- 2 Ice bolt DMG | reflect ice bolts by dashing into them to freeze him | An ancient mage placed in the labyrinth to secure you. Freezes you if you get too angy. | ~ |
+| Phoenix | Has pyrokenesis. <br />Can regenerate. | 5HP | 2 contact DMG<br />5 large fireball DMG<br />3 small fireball DMG | You must strike it's heart with an iron dagger to send it to ashes. | The fiery beast with the magical powers of regeneration turned to the powers of evil by the Ancient Lich. | ~ |
+| Ancient Lich | Cycles through all of the powers of the previous monsters. <br />Regenerates health when it hits you. | 15HP | 5 contact DMG<br />all projectile DMG from other enemies | Destroy the lich's phylactery (her crown) without being crushed into the floor yourself. | After giving up her mortal body, this mage has stored her soul in her crown - immortalising her for eternity; unless the crown breaks... | ~ |

@@ -10,40 +10,13 @@
 
 # Ideas
 
-> Maze
-- Top down horror game
-- Generated maze/dungeon
-- escape the labyrinth by finding a piece of your soul and fighting the monster in each level
+> Story
+- Start in Stage 1  with 10HP
+- Josephine can hear you (but you don't know that)
+- You make your way through a maze of rooms
+- You find Josephine (or not) and she attempts to charge at you
+- You die and go back to the start or you find the exit room
+- You have to get Josephine to run into a wall to stun her while you escape down a tunnel.
+- If you stop moving, she will get you
 
-> Enemies
-- All enemies can hear your movements and opening doors
-- Enemies move towards the room you are in if they hear you
-
-> Enemy - minotaur
-- Referred to as "Josephine"
-- Enemy moves randomly through the maze slowly
-- If the player moves into the room the enemy is in, the enemy attempts to charge the player
-- The charge can break some walls that the player can't
-- If it is charging, it cannot change directions until it hits something or changes rooms
-
-> Enemy - Wizard
-- Referred to as "MAGE"
-- Knows where you are without you making sounds 
-- If the wizard sees the player, it first attempts to freeze it
-- The ice summon bolt can bounce off one wall - has no maximum range
-- The ice bolt slows the player but cannot break walls
-
-> Player
-- Referred to as "PLAYER"
-- Player moves with WASD
-- Player has to avoid the enemy
-- The player has to get to find their 
-
-> Doors 
-- Doors have a chance to make a creaking sound when opened which attracts the enemy
-- (?)Some doors could be fake
-- oil can stop doors from creaking (has a max usage)
-
-> Lore
-- Existence: A magic world which few people to access different powers such as flight, telekinesis, reality warping, and immense strength (see more in powers.txt). 
-- Player: A child who was found by the ruler of the world
+## See level details in ./major_spoilers/Stages.md
