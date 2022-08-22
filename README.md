@@ -13,17 +13,25 @@
 > Maze
 - Top down horror game
 - Generated maze/dungeon
+- escape the labyrinth by finding a piece of your soul and fighting the monster in each level
+
+> Enemies
+- All enemies can hear your movements and opening doors
+- Enemies move towards the room you are in if they hear you
 
 > Enemy - minotaur
 - Referred to as "Josephine"
 - Enemy moves randomly through the maze slowly
 - If the player moves into the room the enemy is in, the enemy attempts to charge the player
 - The charge can break some walls that the player can't
-- Enemy can hear certain sounds (footsteps, doors opening) when the player is near it
-- It moves towards the player if it hears sounds 
 - If it is charging, it cannot change directions until it hits something or changes rooms
 
-> Enemy - 
+> Enemy - Wizard
+- Referred to as "MAGE"
+- Knows where you are without you making sounds 
+- If the wizard sees the player, it first attempts to freeze it
+- The ice summon bolt can bounce off one wall - has no maximum range
+- The ice bolt slows the player but cannot break walls
 
 > Player
 - Referred to as "PLAYER"

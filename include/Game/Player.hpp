@@ -11,7 +11,7 @@ class Player : public Entity {
         ~Player(void);
 
         virtual void Update();
-        virtual void Render();
+        virtual void Render() const;
 
     private:
         Vec2<float> position;

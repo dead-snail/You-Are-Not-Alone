@@ -11,7 +11,7 @@ void Player::Update(){
     
 }
 
-void Player::Render(){
+void Player::Render() const {
     //draw the player rectangle at the centre of the screen
     DrawRectangle(position.GetX()-25, position.GetY()-25, 50, 50, GREEN);
 }

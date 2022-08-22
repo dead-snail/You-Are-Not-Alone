@@ -4,7 +4,7 @@ Stage 2: minotaur, wizard               gain telekenesis
 stage 3: minotaur, wizard, phoenix      gain regeneration
 stage 4: Ancient Lich                   gain teleportation (mid fight)
 
-minotaur: 
+minotaur (Josephine): 
     power: has super speed when it charges
     health: 3hp
     dmg: 1 contact dmg
@@ -15,7 +15,7 @@ minotaur:
 wizard: 
     power: shoots ice bolts which slow the player
            can freeze the player temporarily
-           has telekenesis to form a shield when in grave peril - prevents 1 dmg
+           has telekenesis to form a shield when in grave peril - prevents 1 attack
     health: 5hp
     dmg: 3 contact dmg
          2 ice bolt dmg
@@ -26,8 +26,17 @@ phoenix:
     power: has multiple fire attacks (ring of fire, fireball, etc.)
            regenerates health when it hits you
     health: 5hp
-    dmg: 2 contact dmg
-         5 large fireball dmg
-         1 small fireball dmg (0.2dps for 15s)
+    dmg: 2 contact dmg        |
+         5 large fireball dmg |     (0.2dps for 15s)
+         1 small fireball dmg |
     how to kill: you must strike it's heart with an iron dagger to send it to ashes
-    description: 
+    description: The fiery beast with the magical powers of regeneration turned to the powers of evil by the Ancient Lich.
+
+ancient lich (Murphy): 
+    power: cycles through all of the powers of the previous monsters
+           regenerates health when she hits you
+    health: 15hp
+    dmg: 5 contact dmg
+         all projectile dmg from other enemies
+    how to kill: destroy the lich's phylactery (her crown) without being crushed into the floor yourself
+    description: after giving up her mortal body, this mage has stored her soul in her crown - immortalising her for eternity; unless the crown breaks...
