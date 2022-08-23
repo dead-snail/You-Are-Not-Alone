@@ -3,6 +3,8 @@
 #include <string>
 #include "Game/Entity.hpp"
 #include <vector>
+#include "Vec2.hpp"
+#include "raylib.h"
 
 class Tile : public Entity {
     public:
@@ -10,6 +12,11 @@ class Tile : public Entity {
         virtual void Update();
         virtual void Render();
         ~Tile();
+
+    private:
+        Texture texture;
+        Vec2<int> size;
+        Vec2<int> position;
 };
 
 class Level : public Entity {

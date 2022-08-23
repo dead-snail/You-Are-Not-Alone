@@ -28,6 +28,7 @@ void Game::Render(){
     for(Entity* entity : entityList){
         entity->Render();
     }
+    //t.Render();
 }
 
 bool Game::ShouldClose(){
