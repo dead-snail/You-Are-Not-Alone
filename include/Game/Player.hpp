@@ -3,16 +3,16 @@
 #include "Game/Globals.hpp"
 #include "Vec2.hpp"
 
+#define SPEED 300
+
 class Player : public Entity {
     public:
         Player();
-        Player (const Player&) = delete;
-        Player& operator= (const Player&) = delete;
-        ~Player(void);
-
         virtual void Update();
-        virtual void Render() const;
+        virtual void Render();
+        ~Player(void);
 
     private:
         Vec2<float> position;
+        float speed;
 };

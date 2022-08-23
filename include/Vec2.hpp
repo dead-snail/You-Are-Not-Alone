@@ -23,7 +23,7 @@ class Vec2{
         constexpr Vec2 operator+(const Vec2& rhs) const {
             return {x + rhs.x, y + rhs.y};
         }
-        constexpr Vec2 operator+(const int rhs) const {
+        constexpr Vec2 operator+(const float rhs) const {
             return {x + rhs, y + rhs};
         }
         constexpr Vec2 operator+= (const Vec2& rhs) {
@@ -32,7 +32,7 @@ class Vec2{
         constexpr Vec2 operator-(const Vec2& rhs) const {
             return {x - rhs.x, y - rhs.y};
         }
-        constexpr Vec2 operator-(const int rhs) const {
+        constexpr Vec2 operator-(const float rhs) const {
             return {x - rhs, y - rhs};
         }
         constexpr Vec2 operator-= (const Vec2& rhs) {
@@ -41,7 +41,7 @@ class Vec2{
         constexpr Vec2 operator*(const Vec2& rhs) const {
             return {x * rhs.x, y * rhs.y};
         }
-        constexpr Vec2 operator*(const int rhs) const {
+        constexpr Vec2 operator*(const float rhs) const {
             return {x * rhs, y * rhs};
         }
         constexpr Vec2 operator*= (const Vec2& rhs) {

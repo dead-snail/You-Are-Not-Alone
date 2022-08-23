@@ -16,7 +16,9 @@ void Game::Tick(){
 }
 
 void Game::Update(){
-
+    for(Entity* entity : entityList){
+        entity->Update();
+    }
 }
 
 void Game::Render(){
