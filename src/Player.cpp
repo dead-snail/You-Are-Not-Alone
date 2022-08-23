@@ -12,7 +12,8 @@ Vec2<float> KeysPressed(){
 Player::Player()
     :
     position(Settings::screenWidth / 2-25, Settings::screenHeight / 2-25),
-    speed(SPEED)
+    speed(SPEED),
+    powers(0)
 {
     entityList.push_back(this);
 }

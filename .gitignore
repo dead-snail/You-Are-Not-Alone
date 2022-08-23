@@ -1,4 +1,6 @@
 .vscode/
 build/game.exe
 include/raylib.h
+include/rlgl.h
 lib/
+levels/

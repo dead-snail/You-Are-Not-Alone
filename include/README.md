@@ -1,1 +1,1 @@
-# put raylib.h file in this folder
+# put raylib.h and rlgl.h files in this folder

@@ -15,4 +15,6 @@ class Player : public Entity {
     private:
         Vec2<float> position;
         float speed;
+
+        unsigned int powers : 3;
 };
