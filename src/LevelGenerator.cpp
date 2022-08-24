@@ -1,11 +1,7 @@
 #include "Game/LevelGenerator.hpp"
 
-Tile::Tile(std::string assetpath){
-    texture = LoadTexture(assetpath.c_str());
-    //texture.width *= 10;
-    //texture.height *= 10;
-    size.SetX(texture.width);
-    size.SetY(texture.height);
+Tile::Tile(){
+
 }
 
 void Tile::Update(){
@@ -13,7 +9,15 @@ void Tile::Update(){
 }
 
 void Tile::Render(){
-    //DrawTexture(texture, GetScreenWidth()/2,GetScreenHeight()/2, WHITE);
+    DrawTexture(texture, GetScreenWidth()/2,GetScreenHeight()/2, WHITE);
+}
+
+void Tile::CreateTile(const char* assetpath){
+    texture = LoadTexture(assetpath);
+    texture.width *= 10;
+    texture.height *= 10;
+    size.SetX(texture.width);
+    size.SetY(texture.height);
 }
 
 Tile::~Tile(){

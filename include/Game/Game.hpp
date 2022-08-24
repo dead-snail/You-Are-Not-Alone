@@ -26,5 +26,5 @@ class Game{
     private:
         Player player;
         LevelGenerator LGen;
-        //Tile t;
+        Tile t;
 };

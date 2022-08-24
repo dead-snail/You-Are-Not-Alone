@@ -5,6 +5,7 @@ Game::Game(std::string title){
     assert(!GetWindowHandle());
 
     InitWindow(WIDTH, HEIGHT, title.c_str());
+    t.CreateTile("../assets/playertest.png");
 }
 
 void Game::Tick(){
@@ -28,7 +29,7 @@ void Game::Render(){
     for(Entity* entity : entityList){
         entity->Render();
     }
-    //t.Render();
+    t.Render();
 }
 
 bool Game::ShouldClose(){

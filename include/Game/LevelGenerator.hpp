@@ -8,10 +8,12 @@
 
 class Tile : public Entity {
     public:
-        Tile(std::string assetpath);
+        Tile();
         virtual void Update();
         virtual void Render();
         ~Tile();
+
+        void CreateTile(const char * assetpath);
 
     private:
         Texture texture;
