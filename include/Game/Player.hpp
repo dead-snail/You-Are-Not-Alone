@@ -12,8 +12,9 @@ class Player : public Entity {
         virtual void Render();
         ~Player(void);
 
-    private:
         Vec2<float> position;
+
+    private:
         float speed;
 
         unsigned int powers : 3;

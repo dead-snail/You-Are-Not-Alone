@@ -15,6 +15,7 @@ Player::Player(const char* assetpath)
     speed(SPEED),
     powers(0)
 {
+    this->assetpath = assetpath;
     entityList.push_back(this);
 }
 
@@ -24,11 +25,18 @@ void Player::Update(){
     speed = abs(locPos.GetX()) + abs(locPos.GetY()) > 1 ? 200 : 300;
     
     position += locPos * speed * GetFrameTime();
+    rot += 100*GetFrameTime();
 }
 
 void Player::Render(){
     //draw the player rectangle at the centre of the screen
-    DrawTexture(texture, 0,0, WHITE);
+    DrawTexturePro(texture,
+        size,
+        Rectangle{position.GetX(), position.GetY(), (float)texture.width, (float)texture.height},
+        centre.To_Vector2(),
+        rot,
+        WHITE
+    );
 }
 
 Player::~Player(){

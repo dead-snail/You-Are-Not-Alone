@@ -19,10 +19,16 @@ void Game::Update(){
     for(Entity* entity : entityList){
         entity->Update();
     }
+
+    cam.target = player.position.To_Vector2();
 }
 
 void Game::Render(){
-    ClearBackground(Color{16,0,50,255});
+    ClearBackground(BLACK);
+
+    DrawLine(GetScreenWidth()/2,GetScreenHeight(), GetScreenWidth()/2, 0, SKYBLUE);
+    DrawLine(GetScreenWidth(), GetScreenHeight()/2, 0, GetScreenHeight()/2, SKYBLUE);
+
     DrawFPS(10,10);
 
     for(Entity* entity : entityList){

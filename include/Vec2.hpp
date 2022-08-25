@@ -1,11 +1,17 @@
 #pragma once
 
+#include "raylib.h"
+
 template <typename T>
 class Vec2{
     public:
         Vec2() = default;
         constexpr Vec2(T x, T y) : x(x), y(y) {
 
+        }
+
+        constexpr Vector2 To_Vector2(){
+            return {x,y};
         }
 
         constexpr T GetX() const {return x;}

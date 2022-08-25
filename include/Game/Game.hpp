@@ -26,4 +26,5 @@ class Game{
     private:
         Player player;
         LevelGenerator LGen;
+        Camera2D cam;
 };
