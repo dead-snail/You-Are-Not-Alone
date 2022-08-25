@@ -1,11 +1,10 @@
 #include "Game/Game.hpp"
 
-Game::Game(std::string title){
+Game::Game(std::string title):player("../assets/playertest.png"){
     // assures that a window does not exist before creating a new one
     assert(!GetWindowHandle());
 
     InitWindow(WIDTH, HEIGHT, title.c_str());
-    t.CreateTile("../assets/playertest.png");
 }
 
 void Game::Tick(){
@@ -29,7 +28,6 @@ void Game::Render(){
     for(Entity* entity : entityList){
         entity->Render();
     }
-    t.Render();
 }
 
 bool Game::ShouldClose(){

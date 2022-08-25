@@ -7,7 +7,7 @@
 
 class Player : public Entity {
     public:
-        Player();
+        Player(const char* assetpath);
         virtual void Update();
         virtual void Render();
         ~Player(void);

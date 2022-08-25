@@ -2,9 +2,13 @@
 #include "Game/Game.hpp"
 #include "time.h"
 
+void PreLoadTextures();
+
 int main() {
     //creates the initial "Game" object
     Game game{"Test"};
+
+    PreLoadTextures(); // causes a segfault
 
     //runs the game loop
     while(!game.ShouldClose()){
@@ -13,4 +17,10 @@ int main() {
     }
 
     return 0;
+}
+
+void PreLoadTextures(){
+    for(Entity* e : entityList){
+        e->CreateTexture();
+    }
 }

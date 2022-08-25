@@ -9,7 +9,7 @@ Vec2<float> KeysPressed(){
     return {x,y};
 }
 
-Player::Player()
+Player::Player(const char* assetpath)
     :
     position(Settings::screenWidth / 2-25, Settings::screenHeight / 2-25),
     speed(SPEED),
@@ -28,7 +28,7 @@ void Player::Update(){
 
 void Player::Render(){
     //draw the player rectangle at the centre of the screen
-    DrawRectangle(position.GetX(), position.GetY(), 50, 50, GREEN);
+    DrawTexture(texture, 0,0, WHITE);
 }
 
 Player::~Player(){

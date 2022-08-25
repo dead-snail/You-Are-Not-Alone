@@ -13,9 +13,7 @@ void Tile::Render(){
 }
 
 void Tile::CreateTile(const char* assetpath){
-    texture = LoadTexture(assetpath);
-    texture.width *= 10;
-    texture.height *= 10;
+    
     size.SetX(texture.width);
     size.SetY(texture.height);
 }
