@@ -19,6 +19,7 @@ int main() {
     return 0;
 }
 
+//loads all of the object textures from their stored asset path
 void CreateTextures(){
     for(Entity* e : entityList){
         e->CreateTexture();

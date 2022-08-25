@@ -12,10 +12,9 @@ class Player : public Entity {
         virtual void Render();
         ~Player(void);
 
-        Vec2<float> position;
-
     private:
         float speed;
 
+        //the powers you can get in the game
         unsigned int powers : 3;
 };

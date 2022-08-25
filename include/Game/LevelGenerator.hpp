@@ -1,26 +1,26 @@
 #pragma once
 
 #include <string>
-#include "Game/Entity.hpp"
+#include "Game/Globals.hpp"
 #include <vector>
 #include "Vec2.hpp"
 #include "raylib.h"
 
+//what everything is made of
 class Tile : public Entity {
     public:
-        Tile();
+        //adds this to the things to be updated + rendered every frame
+        Tile(){
+            entityList.push_back(this);
+        }
         virtual void Update();
         virtual void Render();
         ~Tile();
 
         void CreateTile(const char * assetpath);
-
-    private:
-        Texture texture;
-        Vec2<int> size;
-        Vec2<int> position;
 };
 
+// level is made of tiles
 class Level : public Entity {
     public:
         Level(std::string t);
@@ -28,9 +28,10 @@ class Level : public Entity {
         virtual void Render();
         ~Level(void);
 
-        std::vector<Tile> tileGrid; 
+        std::vector<Tile> tileGrid; // y*width + x
 };
 
+//generates the tiles from an image and assigns it a level
 class LevelGenerator {
     public:
         LevelGenerator();
@@ -38,5 +39,6 @@ class LevelGenerator {
         LevelGenerator& operator= (const LevelGenerator&) = delete;
         ~LevelGenerator();
 
+        //actually does the generation - idk how it works i havent made it yet
         Level GenLevel(std::string imgPath);
 };

@@ -1,21 +1,16 @@
 #include "Game/LevelGenerator.hpp"
 
 Tile::Tile(){
-
+    
 }
 
 void Tile::Update(){
 
 }
 
+//renders a single tile in a level
 void Tile::Render(){
     DrawTexture(texture, GetScreenWidth()/2,GetScreenHeight()/2, WHITE);
-}
-
-void Tile::CreateTile(const char* assetpath){
-    
-    size.SetX(texture.width);
-    size.SetY(texture.height);
 }
 
 Tile::~Tile(){
@@ -30,6 +25,7 @@ void Level::Update(){
 
 }
 
+//calls Render() on all the tiles in a level
 void Level::Render(){
 
 }
@@ -43,7 +39,7 @@ LevelGenerator::LevelGenerator(){
 }
 
 Level LevelGenerator::GenLevel(std::string imgpath){    
-    return {"bread"};
+    return {imgpath}; // temporary - the parameter is only the level name
 }
 
 LevelGenerator::~LevelGenerator(){

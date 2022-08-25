@@ -11,10 +11,11 @@ class Entity {
         virtual void Update() = 0;
         virtual void Render() = 0;
         void CreateTexture(){
-            Image image = LoadImage(assetpath);
-            texture = LoadTextureFromImage(image);
+            //loads the texture and changes its size 
+            texture = LoadTexture(assetpath);
             texture.width *= 5;
             texture.height *= 5;
+            //assigns values for drawing the entity
             size = {0,0,(float)texture.width, (float)texture.height};
             centre = {(float)texture.width/2, (float)texture.height/2};
             rot = 0;
@@ -28,4 +29,5 @@ class Entity {
         Rectangle size;
         Vec2<float> centre; 
         float rot;
+        Vec2<float> position;
 };
