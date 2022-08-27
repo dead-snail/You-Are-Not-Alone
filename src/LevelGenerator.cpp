@@ -1,7 +1,7 @@
 #include "Game/LevelGenerator.hpp"
 
 Tile::Tile(){
-    
+    entityList.push_back(this);
 }
 
 void Tile::Update(){

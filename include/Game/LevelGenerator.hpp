@@ -10,9 +10,7 @@
 class Tile : public Entity {
     public:
         //adds this to the things to be updated + rendered every frame
-        Tile(){
-            entityList.push_back(this);
-        }
+        Tile();
         virtual void Update();
         virtual void Render();
         ~Tile();
