@@ -21,4 +21,4 @@
 
 ## See level details in ./major_spoilers/Stages.md
 
-![Bread](https://github.com/dead-snail/You-Are-Not-Alone/blob/main/aaaaa/Capture.PNG)
+![Bread](aaaaa/Capture.PNG)
