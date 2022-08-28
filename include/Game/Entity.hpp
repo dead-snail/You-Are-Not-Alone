@@ -6,7 +6,9 @@
 
 class Entity {
     public:
-        Entity() = default;
+        Entity(){
+            
+        }
 
         virtual void Update() = 0;
         virtual void Render() = 0;
@@ -19,6 +21,7 @@ class Entity {
             size = {0,0,(float)texture.width, (float)texture.height};
             centre = {(float)texture.width/2, (float)texture.height/2};
             rot = 0;
+            position = {0,0};
         }
 
         ~Entity(void) = default;

@@ -11,7 +11,7 @@
 class Tile : public Entity {
     public:
         //adds this to the things to be updated + rendered every frame
-        Tile(int id);
+        Tile(const char * assetpath);
         virtual void Update();
         virtual void Render();
         ~Tile();
@@ -25,11 +25,9 @@ class Tile : public Entity {
 };
 
 // level is made of tiles
-class Level : public Entity {
+class Level{
     public:
         Level(const char* t);
-        virtual void Update();
-        virtual void Render();
         ~Level(void);
 
         std::vector<Tile> tileGrid; // y*width + x
@@ -44,7 +42,7 @@ class LevelGenerator {
         ~LevelGenerator();
 
         //actually does the generation - idk how it works i havent made it yet
-        void GenLevel(const char* levelTitle, const char* imgPath);
+        Level GenLevel(const char* levelTitle, const char* imgPath);
 
         Level* currentLevel;
 };

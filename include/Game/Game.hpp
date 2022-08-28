@@ -26,6 +26,6 @@ class Game{
 
     private:
         Player player; //  bread
-        LevelGenerator LGen; // havent finished making
+        //LevelGenerator LGen; // havent finished making
         Camera2D cam; //not working for some reason - need to look into
 };

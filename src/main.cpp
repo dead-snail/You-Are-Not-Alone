@@ -10,7 +10,7 @@ int main() {
 
     CreateTextures(); 
 
-    game.CreateLevel("Bread", "../assets/playertest.png"); //segfault go brrrr
+    //game.CreateLevel("Bread", "../assets/playertest.png"); 
 
     //runs the game loop
     while(!game.ShouldClose()){

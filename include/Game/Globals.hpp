@@ -7,4 +7,3 @@
 
 //i love bad practice
 extern std::list<Entity*> entityList;
-extern std::list<Entity*> tileList;

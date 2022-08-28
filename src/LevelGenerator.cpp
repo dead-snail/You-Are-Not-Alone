@@ -1,7 +1,7 @@
 #include "Game/LevelGenerator.hpp"
 
-Tile::Tile(int id){
-    tileList.push_back(this);
+Tile::Tile(const char * assetpath){
+    this->assetpath=assetpath;
 }
 
 void Tile::Update(){
@@ -24,19 +24,6 @@ Level::Level(const char* t){
 
 }
 
-void Level::Update(){
-    for(Tile t : tileGrid){
-        t.Update();
-    }
-}
-
-//calls Render() on all the tiles in a level
-void Level::Render(){
-    for(Tile t : tileGrid){
-        t.Render();
-    }
-}
-
 Level::~Level(){
 
 };
@@ -45,7 +32,7 @@ LevelGenerator::LevelGenerator(){
 
 }
 
-void LevelGenerator::GenLevel(const char* levelTitle, const char* imgpath=""){  
+Level LevelGenerator::GenLevel(const char* levelTitle, const char* imgpath){  
     Level newlevel(levelTitle);
 
     //Image image = LoadImage(imgpath);
@@ -60,10 +47,14 @@ void LevelGenerator::GenLevel(const char* levelTitle, const char* imgpath=""){
     // }
 
     for(int i = 0; i < 100;++i){
-        newlevel.tileGrid[i] = Tile(Tiles::Types::Wall);
+        newlevel.tileGrid[i] = Tile("../assets/playertest.png");
     }
 
-    currentLevel = &newlevel;
+    for(Tile t : newlevel.tileGrid){
+        t.CreateTexture();
+    }
+
+    return newlevel;
 }
 
 LevelGenerator::~LevelGenerator(){
