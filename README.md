@@ -21,4 +21,4 @@
 
 ## See level details in ./major_spoilers/Stages.md
 
-![aaa](aaaaa/capture.PNG "fck")
+![aaa](aaaaa/capture.PNG)
