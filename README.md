@@ -21,4 +21,4 @@
 
 ## See level details in ./major_spoilers/Stages.md
 
-![bread](./aaaaa/capture.png)
+![Bread](./aaaaa/capture.png)
