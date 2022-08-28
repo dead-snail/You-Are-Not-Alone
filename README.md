@@ -20,3 +20,5 @@
 - If you stop moving, she will get you
 
 ## See level details in ./major_spoilers/Stages.md
+
+![](capture.PNG)
