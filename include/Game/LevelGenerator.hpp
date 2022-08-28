@@ -5,23 +5,29 @@
 #include <vector>
 #include "Vec2.hpp"
 #include "raylib.h"
+#include "Game/TileTypes.hpp"
 
 //what everything is made of
 class Tile : public Entity {
     public:
         //adds this to the things to be updated + rendered every frame
-        Tile();
+        Tile(int id);
         virtual void Update();
         virtual void Render();
         ~Tile();
 
         void CreateTile(const char * assetpath);
+
+        bool ShouldUpdate();
+
+    private:
+        int id;
 };
 
 // level is made of tiles
 class Level : public Entity {
     public:
-        Level(std::string t);
+        Level(const char* t);
         virtual void Update();
         virtual void Render();
         ~Level(void);
@@ -38,5 +44,7 @@ class LevelGenerator {
         ~LevelGenerator();
 
         //actually does the generation - idk how it works i havent made it yet
-        Level GenLevel(std::string imgPath);
+        void GenLevel(const char* levelTitle, const char* imgPath);
+
+        Level* currentLevel;
 };

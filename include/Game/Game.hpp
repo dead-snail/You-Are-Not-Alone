@@ -22,6 +22,7 @@ class Game{
         void Update();
         void Render();
         bool ShouldClose(); 
+        void CreateLevel(const char* levelTitle, const char* imgpath);
 
     private:
         Player player; //  bread

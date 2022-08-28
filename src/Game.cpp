@@ -34,6 +34,8 @@ void Game::Render(){
 
     DrawFPS(10,10);
 
+    LGen.currentLevel->Render();
+
     //loops through the entity list and draws all of the elements
     for(Entity* entity : entityList){
         entity->Render();
@@ -43,6 +45,10 @@ void Game::Render(){
 //extra steps make my brain fuzy
 bool Game::ShouldClose(){
     return WindowShouldClose();
+}
+
+void Game::CreateLevel(const char * levelTitle, const char* imgpath){
+    LGen.GenLevel(levelTitle, imgpath);
 }
 
 Game::~Game(){

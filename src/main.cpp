@@ -8,7 +8,9 @@ int main() {
     //creates the initial "Game" object
     Game game{"Test"};
 
-    CreateTextures(); // causes a segfault
+    CreateTextures(); 
+
+    game.CreateLevel("Bread", "../assets/playertest.png"); //segfault go brrrr
 
     //runs the game loop
     while(!game.ShouldClose()){
