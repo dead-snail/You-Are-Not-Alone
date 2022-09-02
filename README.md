@@ -1,4 +1,4 @@
-## First game I made with ![Raylib](https://raylib.com)
+## First game I made with [Raylib](https://raylib.com)
 
 ---
 
