@@ -1,10 +1,4 @@
-## You Are Not Alone - 
-
-- This is my entry to the 8th Brackey's Game Jam (if I can manage to finish it on time)
-- I'm on holiday - don't give me shit 
-- I'm probably just going to work on this as an actual project instead of releasing this for the jam.
-- I also have nowhere to work and sitting on the floor is a surpisingly difficult location to code in.
-- I just did three hours worth of planning, I'm not going to be able to submit this on time
+## First game I made with ![Raylib](https://raylib.com)
 
 ---
 

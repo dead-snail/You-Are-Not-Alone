@@ -15,7 +15,7 @@ Game::Game(std::string title):player("../assets/playertest.png"){
 void Game::Tick(){
     Update();
 
-    //has to begin drawing before Render() is called
+    //has to begin drawing before Render() is 
     BeginDrawing();
     Render();
     //Causes mem leaks if you don't call EndDrawing()
@@ -40,7 +40,9 @@ void Game::Render(){
     DrawLine(GetScreenWidth()/2,GetScreenHeight(), GetScreenWidth()/2, 0, SKYBLUE);
     DrawLine(GetScreenWidth(), GetScreenHeight()/2, 0, GetScreenHeight()/2, SKYBLUE);
 
-    DrawFPS(10,10);
+    Vector2 worldPos = GetScreenToWorld2D(Vector2{10,10}, cam);
+
+    DrawFPS(worldPos.x, worldPos.y);
 
     //LGen.currentLevel->Render();
 
@@ -58,7 +60,7 @@ bool Game::ShouldClose(){
 }
 
 void Game::CreateLevel(const char * levelTitle, const char* imgpath){
-    //LGen.GenLevel(levelTitle, imgpath);
+    LGen.GenLevel(levelTitle, imgpath);
 }
 
 Game::~Game(){
