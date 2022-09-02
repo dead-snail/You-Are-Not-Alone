@@ -1,8 +1,8 @@
-## First game I made with [Raylib](https://raylib.com)
+# First game I made with [Raylib](https://raylib.com)
 
 ---
 
-# Ideas
+## Ideas
 
 > Story
 > - Start in Stage 1  with 10HP
