@@ -40,7 +40,7 @@ void Game::Render(){
     DrawLine(-GetScreenWidth()/2,0, GetScreenWidth()/2, 0, SKYBLUE);
     DrawLine(0, -GetScreenHeight()/2, 0, GetScreenHeight()/2, SKYBLUE);
 
-    LGen.currentLevel->Render(); // causes a segfault
+    LGen.currentLevel->Render(); // causes a segfault //////////////////////////////////////
 
     Vector2 worldPos = GetScreenToWorld2D(Vector2{10,10}, cam);
 
