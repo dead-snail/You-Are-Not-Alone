@@ -29,7 +29,7 @@ void Game::Update(){
         entity->Update();
     }
 
-    cam.target = (player.position - Vec2<float>{GetScreenWidth()/2, GetScreenHeight()/2}).To_Vector2();
+    cam.target = (player.position - Vec2<float>{(float)GetScreenWidth()/2, (float)GetScreenHeight()/2}).To_Vector2();
 }
 
 void Game::Render(){
@@ -37,8 +37,10 @@ void Game::Render(){
 
     BeginMode2D(cam);
     //draws a cross in the screen - get rid of later
-    DrawLine(GetScreenWidth()/2,GetScreenHeight(), GetScreenWidth()/2, 0, SKYBLUE);
-    DrawLine(GetScreenWidth(), GetScreenHeight()/2, 0, GetScreenHeight()/2, SKYBLUE);
+    DrawLine(-GetScreenWidth()/2,0, GetScreenWidth()/2, 0, SKYBLUE);
+    DrawLine(0, -GetScreenHeight()/2, 0, GetScreenHeight()/2, SKYBLUE);
+
+    LGen.currentLevel->Render(); // causes a segfault
 
     Vector2 worldPos = GetScreenToWorld2D(Vector2{10,10}, cam);
 
